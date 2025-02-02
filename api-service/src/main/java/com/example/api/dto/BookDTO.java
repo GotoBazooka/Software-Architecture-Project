@@ -1,6 +1,5 @@
-package com.example.processor.model;
+package com.example.api.dto;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,13 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-@Table(name = "books")
-public class Book {
-
-    @Id
+public class BookDTO {
     private String id;
-
     private String title;
     private String author;
     private int year;
